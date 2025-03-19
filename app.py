@@ -7,7 +7,7 @@ import os
 app = Flask(__name__, static_folder='../frontend/build')
 
 # CORS for frontend connection
-CORS(app, resources={r"/*": {"origins": "https://frontend-yuq3.vercel.app/"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "https://frontend-yuq3.vercel.app"}}, supports_credentials=True)
 
 UPLOAD_FOLDER = "uploads"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
